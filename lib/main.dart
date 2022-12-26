@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_firebase/pages/signInPage.dart';
 import 'package:todo_firebase/pages/signUpPage.dart';
 
 void main() {
@@ -11,8 +12,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: SignUpPage(),
+    return const MaterialApp(
+      home: SignInPage(),
     );
   }
 }

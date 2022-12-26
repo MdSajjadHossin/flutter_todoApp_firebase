@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class SignUpPage extends StatefulWidget {
-  const SignUpPage({super.key});
+class SignInPage extends StatefulWidget {
+  const SignInPage({super.key});
 
   @override
-  State<SignUpPage> createState() => _SignUpPageState();
+  State<SignInPage> createState() => _SignInPageState();
 }
 
-class _SignUpPageState extends State<SignUpPage> {
+class _SignInPageState extends State<SignInPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +21,7 @@ class _SignUpPageState extends State<SignUpPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                "Sign Up",
+                "Sign In",
                 style: TextStyle(
                     fontSize: 30,
                     color: Colors.white,
@@ -61,16 +61,28 @@ class _SignUpPageState extends State<SignUpPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
                   Text(
-                    "If Your Already Have an Accoount? ",
+                    "If Your Don't Have an Accoount? ",
                     style: TextStyle(fontSize: 15, color: Colors.white),
                   ),
-                  Text("Login",
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white))
+                  Text(
+                    "Sign Up",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
                 ],
-              )
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              const Text(
+                "Forgot Password",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
             ],
           ),
         ),
@@ -148,7 +160,7 @@ class _SignUpPageState extends State<SignUpPage> {
       ),
       child: const Center(
         child: Text(
-          "Sign Up",
+          "Sign In",
           style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
