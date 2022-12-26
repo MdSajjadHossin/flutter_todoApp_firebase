@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_firebase/screens/home.dart';
+import 'package:todo_firebase/pages/signUpPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Home(),
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        primaryColor: Colors.purple,
-      ),
+      home: SignUpPage(),
     );
   }
 }
